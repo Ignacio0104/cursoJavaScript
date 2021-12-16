@@ -251,3 +251,4 @@ let jugadorCuatro = new Jugador ("Anthony", "Davis", "Lakers");
 let jugadorCinco = new Jugador ("Anthony", "Davis", "Lakers"); //Aca indica que no hay mas lugar
 
 console.log(jugadorCinco.toString());
+
