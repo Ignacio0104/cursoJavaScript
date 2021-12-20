@@ -41,7 +41,15 @@
 		},
 		{
 			"path": "Clase14"
+		},
+		{
+			"path": "Clase15"
+		},
+		{
+			"path": "Clase16"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Clase16"
+	}
 }

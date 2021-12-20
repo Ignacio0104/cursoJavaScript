@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo DOM con JS</title>
+</head>
+<body>
+    <h1 id='cabecera'>Ejemplo DOM con JS </h1>
+    <p id='parrafo'>Saludos</p>
+    <script>
+        console.log("Saludos desde JS");
+        let cabecera=document.getElementById('cabecera').innerHTML; //Sin el inner se accede a TODO el elemento
+        console.log("Valor cabecera " + cabecera);
+        let parrafo = document.getElementById("parrafo").innerHTML;
+        console.log("Valor parrafo " + parrafo);
+        let parrafoDos = document.getElementById("parrafo");
+        console.log("Valor parrafo " + parrafoDos.innerHTML);
+    </script>
+    
+</body>
+</html>
