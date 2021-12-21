@@ -50,9 +50,18 @@
 		},
 		{
 			"path": "Clase17"
+		},
+		{
+			"path": "Clase18"
+		},
+		{
+			"path": "Clase19"
+		},
+		{
+			"path": "Clase20"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "Clase17"
+		"liveServer.settings.multiRootWorkspaceName": "Clase20"
 	}
 }

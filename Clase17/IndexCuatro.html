@@ -8,13 +8,16 @@
 <body>
     <h1 id='titulo' onmouseover="rojo(this)" onmouseout="azul(this)">Manejo de DOM con JS</h1>
     <br/>
-    Nombre: <input type="text" onfocus="cambiar(this)" onblur="regresar(this)"/>
-    <br/>
-    Apellido: <input type="text" onfocus="cambiar(this)" onblur="regresar(this)"/>
-    <br/>
-    Correo Electrónica: <input id="correo" type="text"/>
-    <br/>
-    Dirección: <input id="direccion" type="text"/>
+    <form id="forma">
+        Nombre: <input type="text" onfocus="cambiar(this)" onblur="regresar(this)"/>
+        <br/>
+        Apellido: <input type="text" onfocus="cambiar(this)" onblur="regresar(this)"/>
+        <br/>
+        Correo Electrónica: <input id="correo" type="text"/>
+        <br/>
+        Dirección: <input id="direccion" type="text"/>
+    </form>
+
 
     <script>
         function cambiar(elementoInput)
@@ -28,8 +31,8 @@
 
         document.getElementById('correo').addEventListener('focus',cambiarDos);
         document.getElementById('correo').addEventListener('blur',regresarDos);
-        document.getElementById('direccion').addEventListener('focus',cambiarDos);
-        document.getElementById('direccion').addEventListener('blur',regresarDos);
+        document.getElementById('direccion').addEventListener('focus',(evento)=>{evento.target.style.background='pink'});
+        document.getElementById('direccion').addEventListener('blur',(evento)=>{evento.target.style.background='grey'});
         function cambiarDos(evento)
         {
             let componente =evento.target
@@ -43,7 +46,12 @@
             componente.style.background='white';
         }
 
+        //Recuperar todos los elementos juntos. No anda, hay que borrar el resto del script
+        const forma = document.getElementById('forma')
+        forma.addEventListener('focus',cambiarDos,true);
+        forma.addEventListener('blur',regresarDos,true);
 
+   
     </script>
     
 </body>
