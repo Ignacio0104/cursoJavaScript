@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>Menejo de DOM con JavaScript</title>
+</head>
+<body>
+    <h1 id='titulo' onmouseover="rojo(this)" onmouseout="azul(this)">Manejo de DOM con JS</h1>
+    <br/>
+    Nombre: <input type="text" onfocus="cambiar(this)" onblur="regresar(this)"/>
+    <br/>
+    Apellido: <input type="text" onfocus="cambiar(this)" onblur="regresar(this)"/>
+    <br/>
+    Correo Electrónica: <input id="correo" type="text"/>
+    <br/>
+    Dirección: <input id="direccion" type="text"/>
+
+    <script>
+        function cambiar(elementoInput)
+        {
+            elementoInput.style.background='yellow';
+        }
+        function regresar(elementoInput)
+        {
+            elementoInput.style.background='white';
+        }
+
+        document.getElementById('correo').addEventListener('focus',cambiarDos);
+        document.getElementById('correo').addEventListener('blur',regresarDos);
+        document.getElementById('direccion').addEventListener('focus',cambiarDos);
+        document.getElementById('direccion').addEventListener('blur',regresarDos);
+        function cambiarDos(evento)
+        {
+            let componente =evento.target
+
+            componente.style.background='blue';
+        }
+
+        function regresarDos(evento)
+        {
+            let componente =evento.target
+            componente.style.background='white';
+        }
+
+
+    </script>
+    
+</body>
+</html>
+

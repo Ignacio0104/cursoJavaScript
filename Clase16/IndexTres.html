@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>Menejo de DOM con JavaScript</title>
+</head>
+<body>
+    <h1 id='titulo'>
+        Manejo de DOM con JS
+    </h1>
+    <button onclick="mostrar()">Mostrar</button>
+    <button onclick="modificar()">Modificar</button>
+    <img id='imagen' src="https://estaticos-cdn.elperiodico.com/clip/f4fd34b0-be7e-4606-b2b4-1d446663b3af_media-libre-aspect-ratio_default_0.jpg">
+    <script>
+        //document.write("HOLAAAA"); Esto sobreescribe todo lo previo a este codigo
+        function mostrar ()
+        {
+            document.getElementById('titulo').innerHTML='Nuevo titulo'; 
+            document.getElementById('imagen').src= 'https://resizer.glanacion.com/resizer/uzEsbcTA6EyWG02OH7C_v3czGIY=/768x0/filters:quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/V3GEYETMUJE6FOKASF7CJUIWCI';
+        }
+        function modificar()
+        {
+            document.getElementById('titulo').style.color= 'blue';
+        }
+    </script>
+    
+</body>
+</html>

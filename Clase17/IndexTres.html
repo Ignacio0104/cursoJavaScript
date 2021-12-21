@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>Menejo de DOM con JavaScript</title>
+</head>
+<body>
+    <h1 id='titulo' onmouseover="rojo(this)" onmouseout="azul(this)">Manejo de DOM con JS</h1>
+    <h2 id='tituloDos' onmousedown="verde(this)" onmouseup="amarillo(this)" onclick="rojo(this)"> Titulo para probar cosas </h2>
+    <br/>
+    Nombre: <input type="text" onchange="convertir(this)"/>
+    <script>
+        function convertir(nombreInput) //Convierte el texto en mayusculas una vez modificado
+        {
+            nombreInput.value=nombreInput.value.toUpperCase();
+        }
+
+        function rojo (titulo)
+        {
+            console.log ( "Rojo ");
+            titulo.style.color='red';
+        }
+        function azul (titulo)
+        {
+            titulo.style.color='blue';
+        }
+        function verde (titulo)
+        {
+            console.log ( "Verde ");
+            titulo.style.color='green';
+        }
+
+        function amarillo (titulo)
+        {
+            console.log ( "Amarillo ");
+            titulo.style.color='yellow';
+        }
+    </script>
+    
+</body>
+</html>
+

@@ -3,19 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <title>Ejemplo DOM con JS</title>
+    <style> .azul {color: blue;} </style>
 </head>
 <body>
-    <h1 id='cabecera'>Ejemplo DOM con JS </h1>
-    <p id='parrafo'>Saludos</p>
+    <h1 class="azul", id='cabecera'>Ejemplo DOM con JS </h1>
+    <p class="azul", id='parrafo'>Saludos</p>
+    <p id='parrafoDos'>Otro parrafo</p>
     <script>
+        //Get By ID
         console.log("Saludos desde JS");
-        let cabecera=document.getElementById('cabecera').innerHTML; //Sin el inner se accede a TODO el elemento
-        console.log("Valor cabecera " + cabecera);
-        let parrafo = document.getElementById("parrafo").innerHTML;
-        console.log("Valor parrafo " + parrafo);
+        let cabecera=document.getElementById('cabecera'); //Sin el inner se accede a TODO el elemento
+        console.log("Valor cabecera " + cabecera.innerHTML);
+        //let parrafo = document.getElementById("parrafo").innerHTML;
+        //console.log("Valor parrafo " + parrafo);
+        console.log(`Valor parrafo ${parrafo}`);
         let parrafoDos = document.getElementById("parrafo");
         console.log("Valor parrafo " + parrafoDos.innerHTML);
+        parrafoDos.innerHTML='Nuevo valor parrafo';
+        cabecera.innerHTML="Nuevo valor cabecera";
+        
+        //Get by Tag
+        let parrafos= document.getElementsByTagName('p');
+        console.log(`Numero de parrafos ${parrafos.length}`); //Cantidad de parrafos 
+        for (let i=0;i<parrafos.length;i++)
+        {
+            console.log(parrafos[i].innerHTML);
+        }
+
+        //Get by class (clase CSS)
+        let parrafosClass = document.getElementsByClassName ('azul');
+        console.log(`Numero de parrafos ${parrafosClass.length}`); //Cantidad de parrafos 
+        for (let i=0;i<parrafosClass.length;i++)
+        {
+            console.log('For clasico '+ parrafosClass[i].innerHTML);
+        }
+
+        for(let parrafo of parrafosClass)
+        {
+            console.log(`Impresion con for of ${parrafo.innerHTML}`);
+        }
+
+        //Query select
+        let parrafosQuery = document.querySelectorAll ('p.azul'); //elementos de tipo parrafo con la clase aplicada
+        console.log(`Numero de parrafos ${parrafosQuery.length}`); //Cantidad de parrafos 
+        for (let i=0;i<parrafosQuery.length;i++)
+        {
+            console.log('Query Clasico'+ parrafosQuery[i].innerHTML);
+        }
+
+        for(let parrafo of parrafosQuery)
+        {
+            console.log(`Query for of ${parrafo.innerHTML}`);
+        }
+
     </script>
-    
 </body>
 </html>

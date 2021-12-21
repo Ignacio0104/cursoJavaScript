@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>Menejo de DOM con JavaScript</title>
+</head>
+<body onload='entrar()'>
+    <h1 id='titulo'>
+        Manejo de DOM con JS
+    </h1>
+
+    <div id='mostrar'>
+
+    </div>
+    <script>
+        document.getElementById('titulo').onclick=cambiarTexto; //Se la esta nombrando pero no ejecutando, pro eso sin ()
+        function cambiarTexto()
+        {
+            document.getElementById('titulo').innerHTML='Nuevo titulo';
+            document.getElementById('mostrar').innerHTML='Nuevo contenido';
+        }
+
+        function entrar()
+        {
+            alert("Entrando a la pagina web");
+            let texto='';
+            if(navigator.cookieEnabled) //Funcion para chequear si el navegador del usuario tiene habilitadas las cookies
+            {
+                texto='Cookies están habilitadas'
+            } else
+            {
+                texto="Cookies están inhabilitadas"
+            }
+
+            document.getElementById('mostrar').innerHTML=texto;
+        }
+  </script>
+    
+</body>
+</html>
+
