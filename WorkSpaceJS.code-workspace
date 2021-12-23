@@ -65,9 +65,15 @@
 		},
 		{
 			"path": "Clase22HTML"
+		},
+		{
+			"path": "Clase23"
+		},
+		{
+			"path": "Clase24"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "Clase22HTML"
+		"liveServer.settings.multiRootWorkspaceName": "Clase24"
 	}
 }

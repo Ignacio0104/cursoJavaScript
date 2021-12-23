@@ -1,0 +1,15 @@
+*{
+    font-family: sans-serif;
+}
+
+h1{
+    color: darkgreen;
+    text-align: center;
+}
+p{
+    background-color: crimson;
+    padding: 15px;
+    border: 10px solid powderblue;
+    margin: 50px;  
+    text-align: center;
+}

@@ -1,0 +1,24 @@
+h1{
+    color: #560bad;
+}
+
+a:link, a:visited{ /*Se aplica el link antes de ser clickeado por primera vez*/
+    background-color: #b5179e;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+a:hover,a:active {
+    background-color: #f72585 ;
+    border: 5px solid black;
+}
+
+
+img{
+    width: 500px;
+    height: 300px;
+}
