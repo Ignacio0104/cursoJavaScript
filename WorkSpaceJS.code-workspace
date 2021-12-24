@@ -71,9 +71,30 @@
 		},
 		{
 			"path": "Clase24"
+		},
+		{
+			"path": "Clase25"
+		},
+		{
+			"path": "Clase26"
+		},
+		{
+			"path": "Clase27"
+		},
+		{
+			"path": "Clase28"
+		},
+		{
+			"path": "Clase29"
+		},
+		{
+			"path": "Clase30"
+		},
+		{
+			"path": "Clase31TypeScript"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "Clase24"
+		"liveServer.settings.multiRootWorkspaceName": "Clase30"
 	}
 }

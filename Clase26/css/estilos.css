@@ -1,0 +1,40 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+    color: #f72585;
+    text-align: center;
+}
+h2{
+    color: #3f37c9;
+}
+
+p{
+    color: #459d9d;
+}
+
+div{
+    border: 10px solid #560bad;
+    background-color:#f1faee ;
+    text-align: center;
+}
+
+.tarjeta{
+    border: 10px solid #c755bdc9;
+    background-color:#6ed2e4 ;
+    text-align: right;
+    margin: 15px 100px;
+    padding: 15px;
+}
+
+.titulo{
+    color: #3f37c9;
+    border: solid 5px rgb(236, 19, 19);
+
+}
+
+#titulo_principal{
+    color: cadetblue;
+    background-color: black;
+}
