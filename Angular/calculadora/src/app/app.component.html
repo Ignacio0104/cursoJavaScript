@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>Aplicación de Calculadora</h1>
+  <br>
+  <div id="elements">
+    <h5>Operador A</h5>
+    <input type="number" placeholder="Ingrese el primer operando" class="form-control" [(ngModel)]='numeroUno'>
+
+    <h5>Operador B</h5>
+    <input type="number" placeholder="Ingrese el segundo operando"class="form-control" [(ngModel)]='numeroDos'>
+    <br><br>
+
+    <button class="btn btn-primary" (click)="sumar(numeroUno,numeroDos)">Sumar</button><br>
+    <button class="btn btn-primary" (click)="restar(numeroUno,numeroDos)">Restar</button><br>
+    <button class="btn btn-primary" (click)="multiplicar(numeroUno,numeroDos)">Multiplicar</button><br>
+    <button class="btn btn-primary" (click)="dividir(numeroUno,numeroDos)">Dividir</button><br>
+    <br>
+    <br>
+    <label for="">Resultado:  {{resultado}}</label>
+    <br>{{mensaje}}
+  
+  </div>
+</div>
